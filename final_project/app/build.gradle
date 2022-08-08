@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.project.traveltrack"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    /*signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }*/
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+configurations {
+    all*.exclude group: 'com.google.code.gson'
+    all*.exclude group: 'com.squareup.okhttp3'
+    all*.exclude group: 'com.squareup.okio'
+    all*.exclude group: 'com.android.support', module: 'support-v13'
+}
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.6.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.karumi:dexter:5.0.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}

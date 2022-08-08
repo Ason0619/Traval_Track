@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal" />
+
+    <ImageButton
+        android:id="@+id/change1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_toStartOf="@+id/delete2"
+        android:background="@drawable/main_button_bg"
+        android:focusable="false"
+        android:src="@drawable/ic_create_black_24dp" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/imageButton"
+        android:layout_toEndOf="@+id/guideline"
+        android:textColor="@color/image"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/change1"
+        android:background="@drawable/main_button_bg"
+        android:focusable="false"
+        android:src="@drawable/ic_directions_run_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/delete2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_bg"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:src="@drawable/ic_delete_black_24dp" />
+</RelativeLayout>

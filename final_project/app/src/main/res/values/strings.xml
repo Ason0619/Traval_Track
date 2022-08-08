@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Traveltrack</string>
+    <string name="title_activity_maps">123</string>
+    <string name="google_play_service_missing">No install google play server</string>>
+    <string name="cantopen">cant open this</string>>
+    <string name="android_launcher_image"></string>
+    <string name="title_activity_main">旅遊足跡</string>
+    <string name="title_home">Track</string>
+    <string name="title_dashboard">Search</string>
+    <string name="title_notifications">Help</string>
+</resources>

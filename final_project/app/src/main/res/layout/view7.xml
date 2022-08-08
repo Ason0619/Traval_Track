@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="(5)繪製鍵"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:src="@drawable/photo_6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.繪製鍵:繪製從Search頁面選擇的行程，假如使用者未去Search頁面選擇的行程，點擊繪製鍵如畫面一，跳出訊息，通知使用者未選取行程，\n反之如畫面二，繪製出使用者當天的路線    "
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</LinearLayout>

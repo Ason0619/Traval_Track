@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.開啟足跡:開始記錄使用者位置與偵聽相機並在狀態欄上顯示使用者現在座標\n
+2.暫停足跡:結束記錄使用者位置與偵聽相機，將狀態欄上顯示使用者現在座標關閉\n
+3.結束程式:有三種選擇背景執行、是與否\n
+4.定位鍵:地圖會移動到使用者現在所在位置\n
+5.繪製鍵:繪製從Search頁面選擇的行程\n
+6.清空鍵:將繪製過軌跡的地圖清空\n
+7.畫出自己的生活軌跡"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</LinearLayout>

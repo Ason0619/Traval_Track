@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/leave"
+            android:title="關閉程式"
+            android:orderInCategory="150"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/stop"
+            android:title="暫停足跡"
+            android:orderInCategory="100"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/begin"
+            android:orderInCategory="50"
+            android:title="開始足跡"
+            app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="(5.1)點選繪製鍵後的小功能"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="381dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:src="@drawable/photo_7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. 導航鍵:點選相片集合、起始點與結束點會顯示的功能，會跳出Google Maps 顯示使用者所到達的位置。\n
+2. 查詢鍵:可以點選相片集合、起始點與結束點會顯示的功能，會跳出Google Maps 顯示使用者所點選的位置。\n
+3. 起始點與結束點:繪製軌跡後，行程後標記的起始點與終點。\n
+4. 相片集合鍵:繪製軌跡後，行程中所拍的相片位置，點選即可觀看此地點的相片\n"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+</LinearLayout>
